@@ -7,13 +7,24 @@ public class Principal {
     public static void main(String[] args) {
         JogoDados jogo = new JogoDados();
         jogo.imprimeTable();
+        if(jogo.verificaColunas()){
+             System.out.print("Ganhou");
+        }else{
+            System.out.print("Perdeu");
+        }
 
-        while(true){
-            jogo.Jogador1Joga();
-            jogo.Jogador2Joga();
+     /*   while(true){
+            if(jogo.Jogador1Joga()){
+                break;
+            }
+
+            if(jogo.Jogador2Joga()){
+                break;
+            }
+
             jogo.imprimeTable();
 
-        }
+        }*/
 
     }
 
